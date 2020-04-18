@@ -12,7 +12,7 @@
 *
 **/
 
-#ifndef __PIXEL3XLDXE_H__
-#define __PIXEL3XLDXE_H__
+#ifndef __GINKGODXE_H__
+#define __GINKGODXE_H__
 
-#endif /* __PIXEL3XLDXE_H__ */
+#endif /* __GINKGODXE_H__ */

@@ -32,14 +32,14 @@
   __DATE__"\0"                         /* BiosReleaseDate */
 
 #define TYPE1_STRINGS                                   \
-  "Google\0"                         /* Manufacturer */ \
-  "Pixel 3 XL\0"                     /* Product Name */ \
+  "Xiaomi\0"                         /* Manufacturer */ \
+  "ginkgo\0"                     /* Product Name */ \
   "None\0"                           /* Version */      \
   "                    \0"           /* 20 character buffer */
 
 #define TYPE2_STRINGS                                     \
-  "Google\0"                         /* Manufacturer */   \
-  "Pixel 3 XL\0"                     /* Product Name */   \
+  "Xioami\0"                         /* Manufacturer */   \
+  "ginkgo\0"                     /* Product Name */   \
   "R0\0"                             /* Version */        \
   "Serial Not Set\0"                 /* Serial */         \
   "Base of Chassis\0"                /* board location */ \
@@ -54,7 +54,7 @@
 #define TYPE4_STRINGS                                               \
   "BGA-1156\0"                       /* socket type */              \
   "ARM LTD\0"                        /* manufactuer */              \
-  "Cortex-A57\0"                     /* processor 1 description */  \
+  "Cortex-A73\0"                     /* processor 1 description */  \
   "Cortex-A53\0"                     /* processor 2 description */  \
   "Cortex-A72\0"                     /* processor 2 description */  \
   "0xd03\0"                          /* A53 part number */          \
@@ -630,10 +630,10 @@ STATIC CONST ARM_TYPE17 mArmDefaultType17 = {
     0,      //not part of a set
     1,      //right side of board
     2,      //bank 0
-//  MemoryTypeLpddr3, //LP DDR3, isn't defined yet
-    MemoryTypeDdr3,                  //LP DDR3
+//  MemoryTypeLpddr4, //LP DDR4, isn't defined yet
+    MemoryTypeDdr4,                  //LP DDR4
     {0,0,0,0,0,0,0,0,0,0,0,0,0,0,1}, //unbuffered
-    1600,                            //1600Mhz DDR
+    1866,                            //1866Mhz DDR
     0, //varies between diffrent production runs
     0, //serial
     0, //asset tag
