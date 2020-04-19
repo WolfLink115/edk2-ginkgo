@@ -213,7 +213,16 @@ READ_LOCK_STATUS   = TRUE
   INF MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe.inf
   INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
   INF MdeModulePkg/Application/UiApp/UiApp.inf
-
+  #
+  #Binary DXE drivers from Lenovo MSM8998
+  #
+  
+  FILE DRIVER = 0d35cd8e-97ea-4f9a-96af-0f0d89f76567 {
+    #SECTION DXE_DEPEX = ginkgo/Binary/UFSDxe/UFSDxe.depex
+    SECTION PE32 = ginkgo/Binary/UFSDxe/UFSDxe.efi
+    SECTION UI = "UFSDxe"
+  }
+  
 [FV.FVMAIN_COMPACT]
 FvAlignment        = 8
 ERASE_POLARITY     = 1
